@@ -1,0 +1,45 @@
+.container-img {
+    display: flex;
+    margin-left: auto;
+    border: 1px solid #000;
+    width: 100%;
+    height: 50vw;
+    transition: 0.4s ease-in-out;
+}
+
+.photo {
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.photo-show {
+    opacity: 1;
+    animation: photoScale 1s 0.5s ease-in-out forwards;
+}
+
+.photo-hide {
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+}
+
+@keyframes photoScale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.95);
+    }
+}
