@@ -7,8 +7,6 @@ images.forEach(img => {
 		img: img.getAttribute('src'),
 	};
 	photos.push(photoObj)
-	photos.push(photoObj)
-	photos.push(photoObj)
 });
 
 let container = document.querySelector('.container-img');
@@ -18,7 +16,7 @@ let currentIndex = 0;
 let lastUpdateTime = 0;
 let lastX = 0;
 let lastY = 0;
-let delay = 50; // Задержка между появлениями фото по умолчанию
+let delay = 90; // Задержка между появлениями фото по умолчанию
 let windowSize = window.innerWidth; // Ширина экрана
 let width = windowSize * 10 / 100; // Ширина фото
 let height = windowSize * 10 / 100; // Высота фото
@@ -109,7 +107,7 @@ function hr(e) {
 
 	setTimeout(() => {
 		photo.classList.add('photo-show')
-	}, 10);
+	}, 50);
 
 	setTimeout(() => {
 		photo.classList.add('photo-hide');
