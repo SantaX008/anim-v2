@@ -16,12 +16,12 @@ let currentIndex = 0;
 let lastUpdateTime = 0;
 let lastX = 0;
 let lastY = 0;
-let delay = 90; // Задержка между появлениями фото по умолчанию
+let delay = 50; // Задержка между появлениями фото по умолчанию
 let windowSize = window.innerWidth; // Ширина экрана
 let width = windowSize * 10 / 100; // Ширина фото
 let height = windowSize * 10 / 100; // Высота фото
 let margin = windowSize * 1.5 / 100; // Расстояние, при котором не генерировать фото
-const screenTime = 800; // Время через которое фото пропадет
+const screenTime = 500; // Время через которое фото пропадет
 
 let containerLeft = containerRect.left + window.pageXOffset + (margin * 2);
 let containerRight = containerRect.right + window.pageXOffset - (margin * 2);
